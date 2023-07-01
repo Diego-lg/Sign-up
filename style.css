@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("files//Norse-bold.otf") format("opentype"); /* Replace "files/fonts/" with the correct path */
+}
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.flex-container {
+  border-radius: 5px;
+  display: flex;
+  height: 90vh;
+  width: 100vh;
+  box-shadow: 12px 13px 15px 11px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+}
+
+#leftSide {
+  border-radius: 10px;
+  height: 100%;
+  width: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("files/img1.jpg");
+  color: red;
+}
+
+#odinLogo {
+  display: flex;
+  margin-top: 40%;
+  box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 15%;
+  background: rgba(11, 10, 10, 0.466);
+}
+#odinLogo h1 {
+  text-align: center;
+  font-size: 300%;
+  color: white;
+  font-family: Norse-Bold;
+}
+.popup_body {
+  position: relative;
+}
+#logo {
+  height: auto;
+  max-width: 30%;
+  margin-left: 20%;
+}
+#rightSide {
+  height: 100%;
+  width: 30%;
+  background-color: whitesmoke;
+
+  flex-grow: 1;
+}
+#signContent {
+  border-radius: 5px;
+  margin-top: 33%;
+  padding-left: 5%;
+  box-shadow: 2px 3px 15px 1px rgba(0, 0, 0, 0.2);
+  height: 40%;
+  background-color: white;
+}
+
+#signContent h1 {
+  padding-top: 3%;
+  font-size: 20px;
+}
+
+#info_columns {
+  display: flex;
+  padding: 10px 1px 1px 1px;
+}
+
+#info_columns #first_row {
+  padding-right: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input {
+  margin-bottom: 10px;
+}
+label[for="first_name"] {
+  display: block;
+}
+
+label[for="email"] {
+  display: block;
+}
+
+label[for="password"] {
+  display: block;
+}
+
+label[for="last_name"] {
+  display: block;
+}
+
+label[for="phone_number"] {
+  display: block;
+}
+
+label[for="confirm_password"] {
+  display: block;
+}
+
+/* Set the border of specific input elements to transparent */
+#first_name,
+#email,
+#password,
+#last_name,
+#phone_number,
+#confirm_password {
+  height: 2.3vh;
+
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.137);
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  /* Add other styling properties here, e.g., padding, margin, font-size, etc. */
+}
+
+#create_account {
+  display: inline-block;
+
+  background-color: rgba(34, 128, 34, 0.696);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin: 30px 0px 0px 30px;
+  text-align: center;
+  padding: 15px 32px;
+  transition: all 0.1s ease-in-out;
+}
+#create_account:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.login1 {
+  margin: 30px 0px 0px 30px;
+}
+.login2 {
+  color: rgba(34, 128, 34, 0.696);
+  text-decoration: none;
+}
